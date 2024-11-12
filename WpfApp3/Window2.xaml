@@ -5,11 +5,47 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp3"
         mc:Ignorable="d"
-        Title="Window2" Height="450" Width="800">
+        Title="Window2" Height="553.723" Width="431.322">
     <Grid>
-        <TextBlock FontSize="20" Foreground="Red" HorizontalAlignment="Left" Height="72" Margin="152,102,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="462">Охаё! <LineBreak/>Я программист, честь даю</TextBlock>
-        <TextBox SpellCheck.IsEnabled="True" Language="ru-ru" MaxLength="10" BorderBrush="Black" HorizontalAlignment="Left" Height="62" Margin="152,179,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="462" TextChanged="TextBox_TextChanged"/>
-        <PasswordBox BorderBrush="Black" HorizontalAlignment="Left" Margin="162,251,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="326" Height="32">
-        </PasswordBox>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <TextBox Name="txtDisplay" Grid.Row="0" Margin="10" FontSize="24" TextAlignment="Right" IsReadOnly="True"></TextBox>
+        <Grid Grid.Row="1" Margin="10" ShowGridLines="True">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Button Name="btn7" Content="7" Grid.Row="1" Grid.Column="0" Click="NumberButton_Click"/>
+            <Button Name="btn8" Content="8" Grid.Row="1" Grid.Column="1" Click="NumberButton_Click"/>
+            <Button Name="btn9" Content="9" Grid.Row="1" Grid.Column="2" Click="NumberButton_Click"/>
+
+            <Button Name="btn4" Content="4" Grid.Row="2" Grid.Column="0" Click="NumberButton_Click"/>
+            <Button Name="btn5" Content="5" Grid.Row="2" Grid.Column="1" Click="NumberButton_Click"/>
+            <Button Name="btn6" Content="6" Grid.Row="2" Grid.Column="2" Click="NumberButton_Click"/>
+
+            <Button Name="btn1" Content="1" Grid.Row="3" Grid.Column="0" Click="NumberButton_Click"/>
+            <Button Name="btn2" Content="2" Grid.Row="3" Grid.Column="1" Click="NumberButton_Click"/>
+            <Button Name="btn3" Content="3" Grid.Row="3" Grid.Column="2" Click="NumberButton_Click"/>
+
+            <Button Name="btn0" Content="0" Grid.Row="4" Grid.Column="1" Click="NumberButton_Click"/>
+            <Button Name="btnDecemal" Content="." Grid.Row="4" Grid.Column="2" Click="OperationButton_Click"/>
+            <Button Name="btnEquals" Content="=" Grid.Row="0" Grid.Column="4" Click="EqualsButton_Click"/>
+            <Button Name="btnAdd" Content="+" Grid.Row="1" Grid.Column="4" Click="OperationButton_Click"/>
+            <Button Name="btnRemove" Content="--" Grid.Row="2" Grid.Column="4" Click="OperationButton_Click"/>
+            <Button Name="btnMuti" Content="X" Grid.Row="3" Grid.Column="4" Click="OperationButton_Click"/>
+            <Button Name="btnDivis" Content="/" Grid.Row="4" Grid.Column="4" Click="OperationButton_Click"/>
+            <Button Name="btnClear" Content="C" Grid.Row="4" Grid.Column="0" Click="ClearButton_Click"/>
+        </Grid>
     </Grid>
 </Window>

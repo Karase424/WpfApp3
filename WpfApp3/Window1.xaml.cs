@@ -25,7 +25,7 @@ namespace WpfApp3
         }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            MainWindow window = new MainWindow();
+            Window2 window = new Window2();
             window.Show();
         }
 
