@@ -28,11 +28,6 @@ namespace WpfApp3
             InitializeComponent();
         }
 
-        //private void TextBox_TextChanged(object sender, TextChangedEventArgs e) 
-        //{ 
-        //    TextBox textBox = sender as TextBox; 
-        //    MessageBox.Show(textBox.Text); 
-        //} 
         private void NumberButton_Click(object sender, RoutedEventArgs e)
         {
             Button button = (Button)sender;

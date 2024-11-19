@@ -27,6 +27,20 @@ namespace WpfApp3
         {
             Window2 window = new Window2();
             window.Show();
+            this.Close();
+        }
+
+        private void Test(object sender, RoutedEventArgs e)
+        {
+            if (radioBtn.IsChecked == true & radioBt5.IsChecked == true & radioBtn10.IsChecked == true & radioBtn316.IsChecked == true & radioBtn.IsChecked == true)
+            {
+                MessageBox.Show("Молодец, Боец ;)");
+            }
+            else
+            {
+                MessageBox.Show("Сорри, проходи заново");
+            }
+
         }
 
         //private void MenuItem_Click(object sender, RoutedEventArgs e)

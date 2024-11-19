@@ -22,7 +22,39 @@
             </MenuItem>
 
         </Menu>-->
-        <Button Content="Button" HorizontalAlignment="Left" Margin="196,125,0,0" VerticalAlignment="Top" Width="411" Height="147" Click="Button_Click"/>
-
+        <!--<Button Content="Button" HorizontalAlignment="Left" Margin="196,125,0,0" VerticalAlignment="Top" Width="411" Height="147" Click="Button_Click"/>-->
+        <StackPanel>
+            <TextBlock Name="SMTG" Text="1. Есть ли у китовых акул зубчики на глазах?"/>
+            <StackPanel Name="stackPanel">
+                <RadioButton Name="radioBtn" GroupName="shark" Content="Да"/>
+                <RadioButton Name="radioBtn2" GroupName="shark" Content="нет"/>
+                <RadioButton Name="radioBtn3" GroupName="shark" Content="Зачем им это?"/>
+                <RadioButton Name="radioBtn4" GroupName="shark" Content="фиг знаю"/>
+            </StackPanel>
+            <TextBlock Name="SMTG2" Text="2. Где находится Великая Китайская Стена?"/>
+            <StackPanel Name="stackPanel2">
+                <RadioButton Name="radioBt5" GroupName="china" Content="В Китае"/>
+                <RadioButton Name="radioBtn6" GroupName="china" Content="В России"/>
+                <RadioButton Name="radioBtn7" GroupName="china" Content="В Тихом океане"/>
+                <RadioButton Name="radioBtn8" GroupName="china" Content="Мы такое не проходили"/>
+            </StackPanel>
+            <TextBlock Name="SMTG3" Text="3. Как зовут учителя по C#?"/>
+            <StackPanel Name="stackPanel3">
+                <RadioButton Name="radioBtn9" GroupName="c#" Content="Константин Олегович"/>
+                <RadioButton Name="radioBtn10" GroupName="c#" Content="Константин Александрович"/>
+                <RadioButton Name="radioBtn11" GroupName="c#" Content="Богдан Алексеевич"/>
+                <RadioButton Name="radioBtn12" GroupName="c#" Content="Никита Андреевич"/>
+            </StackPanel>
+            <TextBlock Name="SMTG4" Text="4. Какая ящерица выпускает кровь из глаз в качестве самообороны?"/>
+            <StackPanel Name="stackPanel13">
+                <RadioButton Name="radioBtn13" GroupName="smeshariki" Content="Нукрасы"/>
+                <RadioButton Name="radioBtn14" GroupName="smeshariki" Content="Зелёные ящерицы"/>
+                <RadioButton Name="radioBtn15" GroupName="smeshariki" Content="Меролесы"/>
+                <RadioButton Name="radioBtn316" GroupName="smeshariki" Content="Жабовидная"/>
+            </StackPanel>
+            <StackPanel Height="44">
+                <Button Name="btnchech" Click="Test" Content="Результат" Height="44"/>
+            </StackPanel>
+        </StackPanel>
     </Grid>
 </Window>
