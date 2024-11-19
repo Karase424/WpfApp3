@@ -83,8 +83,7 @@ namespace WpfApp3
             txtDisplay.Text = _currentValue.ToString();
             _operation = '\0';
         }
-
-        private void ClearButton_Click(object sender, RoutedEventArgs e)
+private void ClearButton_Click(object sender, RoutedEventArgs e)
         {
             txtDisplay.Text = "0";
             _currentValue = 0;

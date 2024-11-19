@@ -26,6 +26,7 @@
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
+
             <Button Name="btn7" Content="7" Grid.Row="1" Grid.Column="0" Click="NumberButton_Click"/>
             <Button Name="btn8" Content="8" Grid.Row="1" Grid.Column="1" Click="NumberButton_Click"/>
             <Button Name="btn9" Content="9" Grid.Row="1" Grid.Column="2" Click="NumberButton_Click"/>
@@ -46,6 +47,7 @@
             <Button Name="btnMuti" Content="X" Grid.Row="3" Grid.Column="4" Click="OperationButton_Click"/>
             <Button Name="btnDivis" Content="/" Grid.Row="4" Grid.Column="4" Click="OperationButton_Click"/>
             <Button Name="btnClear" Content="C" Grid.Row="4" Grid.Column="0" Click="ClearButton_Click"/>
+
         </Grid>
     </Grid>
 </Window>
