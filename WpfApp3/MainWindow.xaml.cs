@@ -96,5 +96,11 @@ namespace WpfApp3
             window2.Show();
             this.Close();
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+                Window3 window = new Window3();
+                window.Show();
+        }
     }
 }
