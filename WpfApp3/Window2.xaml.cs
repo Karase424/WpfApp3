@@ -70,7 +70,7 @@ namespace WpfApp3
                     }
                     else
                     {
-                        MessageBox.Show("НА 0 ДЕЛИТЬ НЕЛЬЗЯ, ЛОХ!!)");
+                        MessageBox.Show("НА 0 ДЕЛИТЬ НЕЛЬЗЯ, ХЫ!!)");
                         return;
                     }
                     break;

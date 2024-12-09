@@ -40,13 +40,44 @@
             <Button Name="btn3" Content="3" Grid.Row="3" Grid.Column="2" Click="NumberButton_Click"/>
 
             <Button Name="btn0" Content="0" Grid.Row="4" Grid.Column="1" Click="NumberButton_Click"/>
-            <Button Name="btnDecemal" Content="." Grid.Row="4" Grid.Column="2" Click="OperationButton_Click"/>
-            <Button Name="btnEquals" Content="=" Grid.Row="0" Grid.Column="4" Click="EqualsButton_Click"/>
-            <Button Name="btnAdd" Content="+" Grid.Row="1" Grid.Column="4" Click="OperationButton_Click"/>
-            <Button Name="btnRemove" Content="--" Grid.Row="2" Grid.Column="4" Click="OperationButton_Click"/>
-            <Button Name="btnMuti" Content="X" Grid.Row="3" Grid.Column="4" Click="OperationButton_Click"/>
-            <Button Name="btnDivis" Content="/" Grid.Row="4" Grid.Column="4" Click="OperationButton_Click"/>
-                <Button Name="btnClear" Content="C" Grid.Row="4" Grid.Column="0" Click="ClearButton_Click"/>
+            <Button Name="btnDecemal" Content="." Grid.Row="4" Grid.Column="2" Click="OperationButton_Click">
+                <Button.ToolTip>
+                    ~ Делает из числа десятичную дробь ~
+                </Button.ToolTip>
+            </Button>
+            <Button Name="btnEquals" Content="=" Grid.Row="0" Grid.Column="4" Click="EqualsButton_Click">
+                <Button.ToolTip>
+                    <DockPanel>
+                        <Image Source="C:\Users\Alina\Desktop\stayc-sieun-stayc-meme.gif"></Image>
+                        <TextBlock> ~ Показывает полученный результат ~</TextBlock>
+                    </DockPanel> 
+                </Button.ToolTip>
+            </Button>
+            <Button Name="btnAdd" Content="+" Grid.Row="1" Grid.Column="4" Click="OperationButton_Click">
+                <Button.ToolTip>
+                    ~ Cуммирует первое число на второе число ~
+                </Button.ToolTip>
+            </Button>
+            <Button Name="btnRemove" Content="--" Grid.Row="2" Grid.Column="4" Click="OperationButton_Click">
+                <Button.ToolTip>
+                    ~ Вычитает из первого числа второе ~
+                </Button.ToolTip>
+            </Button>
+            <Button Name="btnMuti" Content="X" Grid.Row="3" Grid.Column="4" Click="OperationButton_Click">
+                <Button.ToolTip>
+                    ~ Умножает первое число на второе ~
+                </Button.ToolTip>
+            </Button>
+            <Button Name="btnDivis" Content="/" Grid.Row="4" Grid.Column="4" Click="OperationButton_Click">
+                <Button.ToolTip>
+                    ~ Делит первое число на второе ~
+                </Button.ToolTip>
+            </Button>
+            <Button Name="btnClear" Content="C" Grid.Row="4" Grid.Column="0" Click="ClearButton_Click">
+                <Button.ToolTip>
+                    ~ Очистить всё ~
+                </Button.ToolTip>
+            </Button>
         </Grid>
     </Grid>
 </Window>
