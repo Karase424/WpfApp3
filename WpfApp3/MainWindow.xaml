@@ -19,9 +19,26 @@
                 <MenuItem Header="Окно с TextBox" Click="MenuItem_Click_3"></MenuItem>
                 <MenuItem Header="Выйти" Click="MenuItem_Click"></MenuItem>
             </MenuItem>
-
         </Menu>
-        <Button Content="Далее" HorizontalAlignment="Left" Margin="490,214,0,0" VerticalAlignment="Top" Width="227" Height="128" Click="Button_Click" RenderTransformOrigin="0.5,0.5">
+        <StackPanel Margin="0,21,0,0">
+            <TreeView>
+                <TextBlock><Run Text="Языки программирования"/></TextBlock>
+                <TreeViewItem Header="Компилированные">
+                    <TreeViewItem Header="C" Selected="TreeViewItem_OnSelected"/>
+                    <TreeViewItem Header="C++" Selected="TreeViewItem_OnSelected"/>
+                    <TreeViewItem Header="Java" Selected="TreeViewItem_OnSelected"/>
+                    <TreeViewItem Header="Swift" Selected="TreeViewItem_OnSelected"/>
+                    <TreeViewItem Header="Go" Selected="TreeViewItem_OnSelected"/>
+                </TreeViewItem>
+                <TreeViewItem Header="Интерпретируемые">
+                    <TreeViewItem Header="PHP" Selected="TreeViewItem_OnSelected"/>
+                    <TreeViewItem Header="Perl" Selected="TreeViewItem_OnSelected"/>
+                    <TreeViewItem Header="Ruby" Selected="TreeViewItem_OnSelected"/>
+                    <TreeViewItem Header="Python" Selected="TreeViewItem_OnSelected"/>
+                </TreeViewItem>
+            </TreeView>
+        </StackPanel>
+        <Button Content="Далее" HorizontalAlignment="Left" Margin="553,208,0,0" VerticalAlignment="Top" Width="227" Height="128" Click="Button_Click" RenderTransformOrigin="0.5,0.5">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -31,7 +48,6 @@
                 </TransformGroup>
             </Button.RenderTransform>
         </Button>
-
         <Image x:Name="DisplayImageForm" HorizontalAlignment="Center" VerticalAlignment="Center" Stretch="Uniform">
             <Image.RenderTransform>
                 <TransformGroup>
@@ -42,7 +58,6 @@
                 </TransformGroup>
             </Image.RenderTransform>
         </Image>
-        <Button Content="Другой тест" HorizontalAlignment="Left" VerticalAlignment="Top" Width="209" RenderTransformOrigin="1.485,5.509" Margin="79,145,0,0" Height="106" Click="Button_Click_1"/>
-
+        <Button Content="Другой тест" HorizontalAlignment="Left" VerticalAlignment="Top" Width="209" RenderTransformOrigin="1.485,5.509" Margin="44,265,0,0" Height="106" Click="Button_Click_1"/>
     </Grid>
 </Window>

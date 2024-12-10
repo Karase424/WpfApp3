@@ -102,5 +102,11 @@ namespace WpfApp3
                 Window3 window = new Window3();
                 window.Show();
         }
+
+        private void TreeViewItem_OnSelected(object sender, RoutedEventArgs e)
+        {
+            TreeViewItem treeViewItem = (TreeViewItem)sender;
+            MessageBox.Show(messageBoxText: "Выбран язык программирования: " + treeViewItem.Header.ToString(), caption: "Выбор языка програмирования", MessageBoxButton.OK);
+        }
     }
 }

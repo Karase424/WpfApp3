@@ -48,7 +48,7 @@
             <Button Name="btnEquals" Content="=" Grid.Row="0" Grid.Column="4" Click="EqualsButton_Click">
                 <Button.ToolTip>
                     <DockPanel>
-                        <Image Source="C:\Users\Alina\Desktop\stayc-sieun-stayc-meme.gif"></Image>
+                        <!--<Image Source="C:\Users\Alina\Desktop\stayc-sieun-stayc-meme.gif"></Image>-->
                         <TextBlock> ~ Показывает полученный результат ~</TextBlock>
                     </DockPanel> 
                 </Button.ToolTip>
