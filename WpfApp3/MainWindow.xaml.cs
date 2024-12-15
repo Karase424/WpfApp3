@@ -99,8 +99,8 @@ namespace WpfApp3
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-                Window3 window = new Window3();
-                window.Show();
+            Window4 window = new Window4();
+            window.Show();
         }
 
         private void TreeViewItem_OnSelected(object sender, RoutedEventArgs e)
